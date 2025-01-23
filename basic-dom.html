@@ -4,6 +4,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simple DOM example</title>
+    <style>
+      .highlight {
+        color: white;
+        background-color: black;
+        padding: 10px;
+        width: 250px;
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <section>
@@ -37,11 +46,16 @@
       sect.appendChild(paragraphLink);
       // paragraphLink.remove();
 
-      newParagraph.style.color = "white";
-      newParagraph.style.backgroundColor = "black";
-      newParagraph.style.padding = "10px";
-      newParagraph.style.width = "250px";
-      newParagraph.style.textAlign = "center";
+      // That's one way of manipulatin a style
+      // newParagraph.style.color = "white";
+      // newParagraph.style.backgroundColor = "black";
+      // newParagraph.style.padding = "10px";
+      // newParagraph.style.width = "250px";
+      // newParagraph.style.textAlign = "center";
+
+      //
+
+      newParagraph.setAttribute("class", "highlight");
     </script>
   </body>
 </html>
