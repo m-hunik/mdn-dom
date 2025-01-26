@@ -43,12 +43,14 @@
         listItem.appendChild(listSpan);
         listItem.appendChild(listDeleteButton);
         listSpan.textContent = currentValue;
-        listDeleteButton.textContent = "Delete";
+        listDeleteButton.textContent = "Kill";
         list.appendChild(listItem);
 
         listDeleteButton.addEventListener("click", () => {
           list.removeChild(listItem);
         });
+
+        input.focus();
       });
     </script>
   </body>
