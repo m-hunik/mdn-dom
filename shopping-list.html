@@ -45,6 +45,10 @@
         listSpan.textContent = currentValue;
         listDeleteButton.textContent = "Delete";
         list.appendChild(listItem);
+
+        listDeleteButton.addEventListener("click", () => {
+          list.removeChild(listItem);
+        });
       });
     </script>
   </body>
